@@ -1,0 +1,72 @@
+{
+  "name": "remix-session-csrf",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts",
+        "default": "./dist/index.d.mts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:publint": "publint",
+    "typecheck:attw": "attw --pack .",
+    "release": "pnpm build && changeset publish"
+  },
+  "keywords": [
+    "remix",
+    "session",
+    "csrf"
+  ],
+  "author": "Jostein Kringlen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosteinKringlen/remix-session-csrf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JosteinKringlen/remix-session-csrf/issues"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.13.1",
+    "@changesets/cli": "2.26.2",
+    "@remix-run/eslint-config": "2.3.0",
+    "@remix-run/node": "2.3.0",
+    "@types/node": "20.9.2",
+    "@types/react": "18.2.37",
+    "@types/uuid": "9.0.7",
+    "eslint": "8.54.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "prettier": "3.1.0",
+    "publint": "0.2.5",
+    "react": "18.2.0",
+    "tsup": "8.0.0",
+    "typescript": "5.3.2"
+  },
+  "peerDependencies": {
+    "@remix-run/node": "^1.10.0 || ^2.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}

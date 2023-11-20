@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "lib": ["DOM", "ESNext"],
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "jsx": "preserve",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+        "target": "ESNext",
+        "strict": true,
+        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "verbatimModuleSyntax": true,
+        "skipLibCheck": true,
+
+        "noEmit": true
+    },
+    "include": ["**/*.ts", "**/*.tsx"]
+}
