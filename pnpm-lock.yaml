@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@arethetypeswrong/cli':
-    specifier: 0.13.5
-    version: 0.13.5
+    specifier: 0.15.2
+    version: 0.15.2
   '@changesets/cli':
     specifier: 2.27.1
     version: 2.27.1
@@ -78,12 +78,12 @@ packages:
     resolution: {integrity: sha512-Jh15/qVmrLGhkKJBdXlK1+9tY4lZruYjsgkDFj08ZmDiWVBLJcqkok7Z0/R0In+i1rScBpJlSvrTS2Lm41Pbnw==}
     dev: true
 
-  /@arethetypeswrong/cli@0.13.5:
-    resolution: {integrity: sha512-S5vPcInsCwt6QJlPi1CxxkVfemVrapeeySv5a1jeodwUzfkG/rLjZTYd1uhwgqDMCgQK4sR8z+W9GZITdqLIew==}
+  /@arethetypeswrong/cli@0.15.2:
+    resolution: {integrity: sha512-YXKq7PyB+nv3KNCpmo384C+1f6DjCwJqSwxPpnFK/2shKy1Ug9RM8ma2eKlgfklyflNqtg1KJvTF2CxZmT0/ig==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@arethetypeswrong/core': 0.13.5
+      '@arethetypeswrong/core': 0.15.1
       chalk: 4.1.2
       cli-table3: 0.6.3
       commander: 10.0.1
@@ -92,12 +92,12 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /@arethetypeswrong/core@0.13.5:
-    resolution: {integrity: sha512-Ahk+vBUK9RBBx4zle2Y1imrbl68GCtLEl0/UBxsJeDd2j5HkbWcgGtgE2tEPMy4qAgWxj2JEptDPl6Jucbov2w==}
+  /@arethetypeswrong/core@0.15.1:
+    resolution: {integrity: sha512-FYp6GBAgsNz81BkfItRz8RLZO03w5+BaeiPma1uCfmxTnxbtuMrI/dbzGiOk8VghO108uFI0oJo0OkewdSHw7g==}
     engines: {node: '>=18'}
     dependencies:
       '@andrewbranch/untar.js': 1.0.3
-      fflate: 0.7.4
+      fflate: 0.8.2
       semver: 7.5.4
       ts-expose-internals-conditionally: 1.0.0-empty.0
       typescript: 5.3.3
@@ -2750,8 +2750,8 @@ packages:
       reusify: 1.0.4
     dev: true
 
-  /fflate@0.7.4:
-    resolution: {integrity: sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw==}
+  /fflate@0.8.2:
+    resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
     dev: true
 
   /file-entry-cache@6.0.1:
