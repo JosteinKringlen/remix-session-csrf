@@ -37,10 +37,8 @@ Configure your `root.tsx` to generate a csrf token, and pass it to the client.
 // app/root.tsx
 
 import { json, type LoaderFunctionArgs } from '@remix-run/node';
-import {
-    AuthenticityTokenProvider,
-    verifyAuthenticityToken,
-} from 'remix-session-csrf';
+import { AuthenticityTokenProvider } from 'remix-session-csrf/react';
+import { verifyAuthenticityToken } from 'remix-session-csrf/server';
 import {
     // rest of imports
     useLoaderData,
@@ -79,10 +77,8 @@ Then, add a token and validation to your form + action:
 
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form } from '@remix-run/react';
-import { 
-    AuthenticityTokenInput, 
-    verifyAuthenticityToken 
-} from 'remix-session-csrf';
+import { AuthenticityTokenInput } from 'remix-session-csrf/react';
+import { verifyAuthenticityToken } from 'remix-session-csrf/server';
 
 import { getSession } from '~/utils/session.server';
 
@@ -111,10 +107,8 @@ You can also use the `useAuthenticityToken` hook to get the token and validation
 
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { useFetcher } from '@remix-run/react';
-import {
-    useAuthenticityToken,
-    verifyAuthenticityToken,
-} from 'remix-session-csrf';
+import { useAuthenticityToken } from 'remix-session-csrf/react';
+import { verifyAuthenticityToken } from 'remix-session-csrf/server';
 
 import { getSession } from '~/utils/session.server';
 
