@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig((opts) => ({
-    entry: ['src/index.ts'],
+    entry: ['src/react.tsx', 'src/server.ts'],
     target: 'es2022',
     external: ['react'],
     sourcemap: true,
