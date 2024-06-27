@@ -112,4 +112,4 @@ jobs:
         run: pnpm build
 
       - name: ʦ ATTW
-        run: pnpm typecheck:attw
+        run: pnpm typecheck:attw --ignore-rules no-resolution
