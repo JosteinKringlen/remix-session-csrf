@@ -1,20 +1,28 @@
 {
+  "sideEffects": false,
   "name": "remix-session-csrf",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "exports": {
-    ".": {
+    "./server": {
       "types": {
-        "import": "./dist/index.d.mts",
-        "require": "./dist/index.d.ts",
-        "default": "./dist/index.d.mts"
+        "import": "./dist/server.d.mts",
+        "require": "./dist/server.d.ts",
+        "default": "./dist/server.d.mts"
       },
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "default": "./dist/index.mjs"
+      "import": "./dist/server.mjs",
+      "require": "./dist/server.js",
+      "default": "./dist/server.mjs"
+    },
+    "./react": {
+      "types": {
+        "import": "./dist/react.d.mts",
+        "require": "./dist/react.d.ts",
+        "default": "./dist/react.d.mts"
+      },
+      "import": "./dist/react.mjs",
+      "require": "./dist/react.js",
+      "default": "./dist/react.mjs"
     }
   },
   "files": [
