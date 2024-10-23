@@ -60,7 +60,7 @@
     "@changesets/cli": "2.27.1",
     "@remix-run/eslint-config": "2.4.1",
     "@remix-run/node": "2.4.1",
-    "@types/node": "20.10.5",
+    "@types/node": "20.17.0",
     "@types/react": "18.2.45",
     "@types/uuid": "9.0.7",
     "eslint": "8.56.0",
